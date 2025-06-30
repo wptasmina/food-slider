@@ -143,5 +143,5 @@ background-repeat: no-repeat;
         transparent 100%, #000
     );
     backdrop-filter: blur(10px);
-    background: radial-gradient(calc(var(--radius) + 1px), #eee5 100%, #eee2);
+    background: radial-gradient(calc(var(--radius) + 1px), #eee5 100%, #eee2) ;
 }
