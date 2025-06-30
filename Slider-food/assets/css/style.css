@@ -143,5 +143,18 @@ background-repeat: no-repeat;
         transparent 100%, #000
     );
     backdrop-filter: blur(10px);
-    background: radial-gradient(calc(var(--radius) + 1px), #eee5 100%, #eee2) ;
+    background: radial-gradient(calc(var(--radius) + 1px), #eee5 100%, #eee2);
+}
+.circle span{
+    display: flex;
+    position: absolute;
+    height: calc(--radius) * 2 + 50px;
+    top: 50%;
+    left: 50%;
+    --rotate: 50dag;
+    transform: translate(-50%, -50%) rotate(calc(var(--rotate) + 360deg));
+    text-transform: uppercase;
+    color: #fff;
+    font-size: small;
+    animation: circleRotate 20s linear infinite;
 }
