@@ -90,4 +90,19 @@ header ul li{
     height: 80px;
     content: '';
 background-image: url(../images/leaves.webp);
+background-size: cover;
+background-repeat: no-repeat;
+}
+.slider .content div:nth-child(1){
+    text-align: left;
+    text-transform: uppercase;
+    transform: translateY(20px);
+}
+.slider .content button{
+    border: 1px solid #eee5;
+    color: #eee;
+    background: transparent;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    border-radius: 20px;
 }
