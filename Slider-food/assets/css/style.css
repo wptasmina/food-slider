@@ -89,5 +89,5 @@ header ul li{
     width: 80px;
     height: 80px;
     content: '';
-    background-image: url(/assets/images/leaves.webp);
+background-image: url(../images/leaves.webp);
 }
