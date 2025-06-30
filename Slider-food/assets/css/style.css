@@ -1,3 +1,93 @@
-.text{
-    font-size: 6rem;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{  
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 50px;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+header ul{
+    display: flex;
+    gap: 30px;
+}
+header ul li{
+    font-size: 16px;
+    font-weight: 500;
+}
+.logo{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+:root {
+    --width-circle: 150vw;
+    --radius: calc(100vw / 6)
+}
+.slider{
+    width: 100vw;
+    height: 100vw;
+    overflow: hidden;
+    position: relative;
+    background-color: #17232A;
+    background-image: radial-gradient(
+        #fff3, transparent 50%
+    );
+    margin-top: -50px;
+}
+.slider .list{
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    transition: transform .8s;
+}
+.slider .list .item{
+    width: calc(var(--radius) * 2);
+    text-align: center;
+    transform: rotate(45deg);
+    transition: transform 1s;
+}
+.slider .list .item.active{
+    transform: rotate(0deg);
+}
+.slider .list .item img{
+    width: 90%;
+    filter: drop-shadow(0 20px #000 );
+}
+.slider .content{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #eee;
+    width: max-content;
+}
+.slider .content div:nth-child(2){
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 800;
+    position: relative;
+}
+.slider .content div:nth-child(2)::before{
+    position: absolute;
+    left: 60%;
+    bottom: 50%;
+    width: 80px;
+    height: 80px;
+    content: '';
+    background-image: url(/assets/images/leaves.webp);
 }
