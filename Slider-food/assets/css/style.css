@@ -164,3 +164,122 @@ background-repeat: no-repeat;
         transform: translate(-50%, -50%) rotate(calc(var(--rotate) + 360deg));
     }
 }
+
+
+/* Existing styles... (your original styles stay the same) */
+
+/* ===== RESPONSIVE STYLES ===== */
+
+/* @media (max-width: 1024px) {
+    header {
+        padding: 5px 30px;
+    }
+
+    header ul {
+        gap: 20px;
+    }
+
+    .slider .content div:nth-child(2) {
+        font-size: 3.5rem;
+        letter-spacing: 6px;
+    }
+
+    .slider .content button {
+        padding: 8px 16px;
+    }
+
+    #prev, #next {
+        width: 40px;
+        height: 40px;
+        font-size: large;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+
+    header ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .slider {
+        height: 120vw; /* extra height for content stacking */
+    /* }
+
+    .slider .list .item {
+        width: calc(var(--radius) * 1);
+        
+    }
+    .slider .list .item  img{
+        width: 100%;
+
+    } */
+
+    /* .slider .content div:nth-child(2) {
+        font-size: 2.5rem;
+        letter-spacing: 4px;
+    }
+
+    .slider .content div:nth-child(1) {
+        font-size: 14px;
+    }
+
+    .slider .content button {
+        padding: 6px 14px;
+    }
+
+    #prev, #next {
+        width: 35px;
+        height: 35px;
+        font-size: medium;
+    }
+} */
+
+/* @media (max-width: 480px) {
+    .slider {
+        height: 150vw;
+    }
+
+    .slider .list {
+        display: flex;
+    }
+
+    .slider .list .item {
+        width: 100px;
+        transform: rotate(0deg) !important;
+    }
+    .slider .list .item  img{
+        width: 100%;
+
+    }
+
+    .slider .content div:nth-child(2) {
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+    }
+
+    .slider .content div:nth-child(1) {
+        font-size: 12px;
+    }
+
+    .slider .content button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    #prev, #next {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .circle span {
+        font-size: 10px;
+    }
+}  */
